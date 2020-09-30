@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="banner-cap">
+        <img src="img/banner.jpg" alt="banner-cap">
+    </div>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href=""> Tiết kiệm với ứng dụng </a></li>
+                <li><a href=""> Bán hàng cùng Lazada </a></li>
+                <li><a href=""> Chăm sóc khách hàng </a></li>
+                <li><a href=""> Kiểm tra đơn hàng </a></li>
+                <li><a href=""> Đăng ký </a></li>
+                <li><a href=""> Đăng nhập </a></li>
+                <li><a href="">CHANGE LANGUAGE</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="search-tools">
+                <input type="text" name="search" id="search" placeholder="Tìm kiếm trên Lazada">
+                <div class="btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <div class="sale">
+                <img src="img/sale.jpg" alt="sale">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="banner">
+            <div class="categories" id="categories">
+                <ul>
+                    <li onmouseover="drop_left_show(),getContent('tb')" onmouseout="drop_left_hide()"> Thiết bị điện tử </li>
+                    <li onmouseover="drop_left_show(),getContent('phukien')" onmouseout="drop_left_hide()"> Phụ kiện điện tử</li>
+                    <li onmouseover="drop_left_show(),getContent('tv')" onmouseout="drop_left_hide()"> TV & Thiết bị gia dụng</li>
+                    <li onmouseover="drop_left_show(),getContent('sk_lamdep')" onmouseout="drop_left_hide()"> Sức khỏe và làm đẹp</li>
+                    <li onmouseover="drop_left_show(),getContent('me_be')" onmouseout="drop_left_hide()"> Hàng Mẹ, Bé và đồ chơi</li>
+                    <li onmouseover="drop_left_show(),getContent('taphoa')" onmouseout="drop_left_hide()"> Siêu thị tạp hóa</li>
+                    <li onmouseover="drop_left_show(),getContent('hanggd')" onmouseout="drop_left_hide()"> Hàng gia dụng và đời sống</li>
+                    <li onmouseover="drop_left_show(),getContent('thoi_trang')" onmouseout="drop_left_hide()"> Thời trang</li>
+                    <li onmouseover="drop_left_show(),getContent('pk_thoi_trang')" onmouseout="drop_left_hide()">Phụ kiện thời trang</li>
+                    <li onmouseover="drop_left_show(),getContent('the_thao')" onmouseout="drop_left_hide()">Thể thao</li>
+                    <li onmouseover="drop_left_show(),getContent('du_lich')" onmouseout="drop_left_hide()"> Du lịch</li>
+                </ul>
+            </div>
+            <div class="banner-slide">
+                <img src="img/banner1.jpg" alt="banner" id="banner-primary">
+            </div>
+            <div class="drop-left" id="drop-left">
+                
+            </div>
+        </div>
+        <div class="mod-card">
+            <div class="mod-card-item">
+                <i class="fa fa-university" aria-hidden="true"></i>
+                <label for="">LazMall</label>
+            </div>
+            <div class="mod-card-item">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <label for="">Mã giảm giá</label>
+            </div>
+            <div class="mod-card-item">
+                <i class="fa fa-certificate" aria-hidden="true"></i>
+                <label for="">Nạp thẻ & Vouncher</label>
+            </div>
+            <div class="mod-card-item">
+                <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                <label for="">Laz Global</label>
+            </div>
+        </div>
+        <div class="deal container-item">
+            <h4>Deal chớp nhoáng</h4>
+            <div class="deal-content container-content">
+                <div class="deal-time">
+                    <b>Đang bán</b>
+                    <div class="clock">
+                        <strong>Kết thúc trong</strong>
+                        <div class="clock-item">
+                            <span id="clock-hh"></span>
+                        </div> <strong>:</strong>
+                        <div class="clock-item">
+                            <span id="clock-mm"></span>
+                        </div> <strong>:</strong>
+                        <div class="clock-item">
+                            <span id="clock-ss"></span>
+                        </div>
+                    </div>
+                    <div class="deal-all-list">
+                        <a href="">Mua sắm toàn bộ sản phẩm</a>
+                    </div>
+                </div>
+                <div class="deal-list" id="deal-list">
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/cadu1nang.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>Cá Đù một nắng nguyên con- Túi 500g - Giao Hàng Ngay Tại HCM - Bách hóa hải sản tươi sống
+                                Hasasa</p>
+                            <h2>69.000đ</h2>
+                            <b> 120.000đ </b> <span> -43% </span>
+                        </div>
+                    </div>
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/mihoacuc.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>Bánh Mì Hoa Cúc Lớn Harrys Pháp NEW (500g) - VITAMIN HOUSE</p>
+                            <h2>106.000đ</h2>
+                            <b> 195.000đ </b> <span> -46% </span>
+                        </div>
+                    </div>
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/bachi.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>[MUA KÈM LẨU GIÁ SỐC] - Khay Ba Chỉ Bò Mỹ Cuộn (500G) - TẶNG Sốt chấm Sukiyaki (40G)</p>
+                            <h2>109.000đ</h2>
+                            <b> 169.000đ </b> <span> -36% </span>
+                        </div>
+                    </div>
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/coca.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>Coca-Cola Orange Vanilla 355ml - Coca cola vị cam vani</p>
+                            <h2>22.000đ</h2>
+                            <b> 46.000đ </b> <span> -52% </span>
+                        </div>
+                    </div>
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/rongnho.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>1 Hộp 12 gói rong nho SABUDO Nhật Bản F99 + Tặng 2 gói sốt mè rang</p>
+                            <h2>258.000đ</h2>
+                            <b> 449.000đ </b> <span> -43% </span>
+                        </div>
+                    </div>
+                    <div class="deal-list-item">
+                        <div class="img">
+                            <img src="img/ilanno.jpg" alt="cadu1nang">
+                        </div>
+                        <div class="description">
+                            <p>Llano Máy Tính Xách Tay Miếng Dán Màn Hình Chống Nhìn Trộm Chống Chói Màn Hình Bút Viết Bí Mật Phim Cho 12-16.1 Inch Máy Tính Xách Tay</p>
+                            <h2>660.000đ</h2>
+                            <b> 999.000đ </b> <span> -34% </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="btn-more" onclick="changeDealPage()">Xem<br> thêm</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collection container-item">
+            <h4> Bộ sưu tập </h4>
+            <div class="collection-list container-content" id="collection-list">
+                
+            </div>
+        </div>
+        <div class="container-item">
+            <h4> Danh mục ngành hàng</h4>
+            <div class="container-content list-product" id="list-product">
+                
+            </div>
+        </div>
+        <div class="container-item">
+            <h4>Dành riêng cho bạn</h4>
+            <div class="person-product" id="person-product">
+                
+            </div> 
+            <div class="btn" onclick="loadMore()" id="loadMore">
+                TẢI THÊM 
+            </div>   
+        </div>
+    </div>
+    <footer>
+        <div class="contact">
+            <h2>LIÊN HỆ VỚI LAZADA</h2>
+            <ul>
+                <li><a href="">Thứ 2 đến CN: 9h - 18h (Hotline), 7h - 22h (chat trực tuyến)</a></li>
+                <li><a href="">Trung tâm hỗ trợ</a></li>
+                <li><a href="">Hướng dẫn đặt hàng</a></li>
+                <li><a href="">Giao hàng & Nhận hàng</a></li>
+                <li><a href="">Chính sách hàng nhập khẩu</a></li>
+                <li><a href="">Hướng dẫn đổi trả hàng</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h2>LAZADA VIỆT NAM</h2>
+            <ul>
+                <li><a href="">Về Lazada Việt Nam</a></li>
+                <li><a href="">Bán hàng cùng Lazada</a></li>
+                <li><a href="">Chương trình Lazada Afﬁliate</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Điều khoản mua bán hàng hóa</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="">Báo chí</a></li>
+                <li><a href="">Bảo vệ quyền sở hữu trí tuệ</a></li>
+                <li><a href="">Quy chế hoạt động sàn Lazada</a></li>
+                <li><a href="">Điều Khoản Công Cụ Tương Tác</a></li>
+            </ul>
+        </div>
+        <div class="address">
+            <div class="app">
+                <div class="logo">
+                    <img src="img/icon.png" alt="">
+                </div>
+                <div class="content">
+                    <h5>Go where your heart beats</h5>
+                    <p>Tải App Lazada</p>
+                </div>
+            </div>
+            <p>CÔNG TY TNHH RECESS</p> 
+            <p>Giấy CNĐKDN: 0308808576 – Ngày cấp: 06/5/2009, được sửa đổi lần thứ 19 ngày 15/8/2019.</p> 
+            <p>Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP.HCM</p> 
+            <p>Địa chỉ đăng ký kinh doanh: Tầng 19, Tòa nhà Saigon Centre – Tháp 2, 67 Lê Lợi, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam.</p> 
+        </div>
+    </footer>
+    <script src="js/product.js"></script>
+    <script src="node_modules//jquery/dist/jquery.min.js"></script>
+    <script src="js/javaScript.js"></script>  
+    <script>
+        setInterval(function () {
+            var today = new Date();
+
+            document.getElementById("clock-hh").innerHTML = today.getHours();
+            document.getElementById("clock-mm").innerHTML = today.getMinutes();
+            document.getElementById("clock-ss").innerHTML = today.getSeconds();
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
